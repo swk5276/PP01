@@ -37,29 +37,14 @@ namespace MuSeoun_Engine
 
 	private:
 		void Initialize()
-		{
-
-		}
+		{		}
 		void Release()
-		{
-		}
+		{		}
 
 		void Input()
-		{
-			/*	if (GetAsyncKeyState(VK_SPACE) & 0x8000 || GetAsyncKeyState(VK_SPACE) & 0x8001)
-				{
-
-				}
-				else
-				{
-
-				}*/
-
-		}
+		{		}
 		void Update()
-		{
-
-		}
+		{		}
 		void Render()
 		{
 			chrono::system_clock::time_point startRenderTimePoint = chrono::system_clock::now();
@@ -70,25 +55,11 @@ namespace MuSeoun_Engine
 
 			chrono::duration<double> renderDuration = chrono::system_clock::now() - startRenderTimePoint;
 
-			string fps = "FPS(milliseconds) : " + to_string(renderDuration.count());
-			cRenderer.DrawString(fps);
+			cout << "FPS speed : " << 1.0/renderDuration.count()<< endl;
+
+		int remainingFrameTime = 100 - (int)(renderDuration.count() * 1000.0);
+		if (remainingFrameTime > 0)
+			this_thread::sleep_for(chrono::milliseconds(remainingFrameTime));
 		}
-
-
-		////cout << "Rendering speed : " << renderDuration.count() << "sec" << endl;
-
-		//int remainingFrameTime = 100 - (int)(renderDuration.count() * 1000.0);
-		//if (remainingFrameTime > 0)
-		//	this_thread::sleep_for(chrono::milliseconds(remainingFrameTime));
-
-
-
-
 	};
-
-
-
-
-
-
 }
