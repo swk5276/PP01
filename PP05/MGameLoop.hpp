@@ -16,6 +16,11 @@ namespace MuSeoun_Engine
 		chrono::system_clock::time_point startRenderTimePoint;
 		chrono::duration<double> renderDuration;
 		Player p;
+		Monster m;
+		string p1 ="P";
+		string m1="M";
+		string gameover = "";
+
 
 	public:
 		MGameLoop() { _isGameRunning = false; }
@@ -45,7 +50,7 @@ namespace MuSeoun_Engine
 	private:
 		void Initialize()
 		{
-
+			
 		}
 		void Release()
 		{
@@ -62,6 +67,7 @@ namespace MuSeoun_Engine
 				p.isKeyUnpressed();
 			}
 
+
 		}
 		void Update()
 		{
@@ -74,7 +80,20 @@ namespace MuSeoun_Engine
 
 
 			cRenderer.MoveCursor(p.x, p.y);
-			cRenderer.DrawString("P");
+			cRenderer.DrawString(p1);
+			cRenderer.MoveCursor(m.x, m.y);
+			cRenderer.DrawString(m1);
+			cRenderer.MoveCursor(25, 5);
+			cRenderer.DrawString(gameover);
+
+			m.MMove();
+			if (m.x == p.x && m.y == p.y)
+			{
+				m1 = "";
+				p1 = "";
+				gameover = "gameover";
+			}
+
 
 
 			cRenderer.MoveCursor(10, 20);

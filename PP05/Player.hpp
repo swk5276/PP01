@@ -23,3 +23,21 @@ public:
 	}
 
 };
+class Monster
+{
+public:
+	int x, y;
+	Monster()
+	{
+		x = 50;
+		y = 7;
+	}
+	~Monster()
+	{
+
+	}
+	void MMove()
+	{
+		x--;
+	}
+};
