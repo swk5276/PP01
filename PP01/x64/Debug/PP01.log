@@ -1,6 +1,6 @@
 ﻿  Lecture02-2.cpp
-C:\Master\PP01\Lecture02-2.cpp(74,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\user\Desktop\GIT\PP01\Lecture02-2.cpp(74,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
   Lecture02.cpp
   코드를 생성하고 있습니다...
-  LINK : C:\Master\x64\Debug\PP01.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
-  PP01.vcxproj -> C:\Master\x64\Debug\PP01.exe
+  LINK : C:\Users\user\Desktop\GIT\x64\Debug\PP01.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  PP01.vcxproj -> C:\Users\user\Desktop\GIT\x64\Debug\PP01.exe

@@ -20,10 +20,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MConsolUtil.hpp">
+    <ClInclude Include="MGameLoop.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="MGameLoop.hpp">
+    <ClInclude Include="Player.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MConsolUtil.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
