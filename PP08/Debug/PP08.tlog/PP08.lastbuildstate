@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 PlatformToolSet=v143:VCToolArchitecture=Native32Bit:VCToolsVersion=14.31.31103:TargetPlatformVersion=10.0.19041.0:
 Debug|Win32|C:\Users\user\Desktop\GIT\|
+=======
+PlatformToolSet=v143:VCToolArchitecture=Native32Bit:VCToolsVersion=14.31.31103:TargetPlatformVersion=10.0.19041.0:
+Debug|Win32|C:\Users\user\Desktop\GIT\|
+>>>>>>> 87923e54aaf16d2eae359672735863dd39cb3fa6
