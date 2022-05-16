@@ -1,8 +1,9 @@
-﻿#include <GLFW/glfw3.h>
+﻿
+
+#include <GLFW/glfw3.h>
 #include <stdlib.h>
 #include <stdio.h>
 
-#pragma comment(lib,"opengl32")
 
 static void error_callback(int error, const char* description)
 {
@@ -35,31 +36,23 @@ int main(void)
         glfwGetFramebufferSize(window, &width, &height);
         ratio = width / (float)height;
 
-        glClearColor(0.7f, 0.7f, 0.7f, 1);
+
+        glClearColor(0, 0, 1, 1);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        /*glBegin(GL_POINTS);
+        /*glPointSize(10);
+        glBegin(GL_POINTS);
+
         glColor3f(1.0f, 0.0f, 0.0f);
         glVertex2f(0.0f, 0.0f);
-        glEnd();*/
 
+        glEnd();
+        glPointSize(10);
         glBegin(GL_TRIANGLES);
+
         glColor3f(1.0f, 0.0f, 0.0f);
-        glVertex2f(0.0f, 0.0f);
-        glVertex2f(1.0f, 1.0f);
-        glColor3f(0.0f, 0.0f, 1.0f);
-        glVertex2f(1.0f, -1.0f);
-        glEnd();
-
-        glBegin(GL_LINES);
-        glColor3f(1.0f, 1.0f, 0.0f);
-        glVertex2f(0.0f, 0.0f);
-        glVertex2f(-1.0f, -1.0f);
-        glColor3f(0.0f, 1.0f, 1.0f);
-        glVertex2f(0.0f, 0.0f);
-        glVertex2f(-1.0f, 1.0f);
-        glEnd();
-
+        적(255,0,0)
+        주(207,255,229)*/
 
         glfwSwapBuffers(window);
         glfwPollEvents();
